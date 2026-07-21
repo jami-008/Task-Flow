@@ -513,19 +513,18 @@
 
 
 small{
+    display:block;
+    min-height:20px;
 
-display:block;
+    margin-top:6px;
+    margin-bottom:12px;
 
-margin-top:-10px;
+    color:#dc2626;
 
-margin-bottom:15px;
+    font-size:13px;
+    font-weight:500;
 
-font-size:.85rem;
-
-color:#ef4444;
-
-min-height:18px;
-
+    transition:0.2s ease;
 }
 
 
