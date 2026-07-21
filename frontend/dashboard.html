@@ -1,9 +1,19 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskFlow | Dashboard</title>
+
+    <link rel="icon" type="image/svg+xml" href="assets/logos/taskflow-icon.svg">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
     <link rel="stylesheet" href="css/variables.css">
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/layout.css">
@@ -11,5 +21,140 @@
     <link rel="stylesheet" href="css/pages.css">
     <link rel="stylesheet" href="css/responsive.css">
 </head>
+
+<body>
+
+    <div class="dashboard">
+
+        <!-- Sidebar -->
+
+        <aside class="sidebar">
+
+            <div class="sidebar-logo">
+
+                <img src="assets/logos/taskflow-logo.svg" alt="TaskFlow">
+
+            </div>
+
+            <nav>
+
+                <a href="#" class="active">🏠 Dashboard</a>
+
+                <a href="#">📋 Today's Tasks</a>
+
+                <a href="#">📅 Tomorrow</a>
+
+                <a href="#">📝 History</a>
+
+                <a href="#">📊 Statistics</a>
+
+                <a href="#">⚙ Settings</a>
+
+                <a href="#">🚪 Logout</a>
+
+            </nav>
+
+        </aside>
+
+        <!-- Main -->
+
+        <main class="main-content">
+
+            <!-- Header -->
+
+            <header class="topbar">
+
+                <input
+                    type="text"
+                    placeholder="Search task..."
+                    class="search-box">
+
+                <div class="topbar-right">
+
+                    <button>🌙</button>
+
+                    <button>🔔</button>
+
+                    <div class="profile">
+
+                        J
+
+                    </div>
+
+                </div>
+
+            </header>
+
+            <!-- Welcome -->
+
+            <section class="welcome-card">
+
+                <h1>Good Evening 👋</h1>
+
+                <p>
+                    Let's finish today's tasks.
+                </p>
+
+            </section>
+
+            <!-- Dashboard Grid -->
+
+            <section class="dashboard-grid">
+
+                <div class="today-card">
+
+                    <div class="card-header">
+
+                        <h2>Today's Tasks</h2>
+
+                        <button class="btn btn-primary">
+
+                            + Add Task
+
+                        </button>
+
+                    </div>
+
+                    <div id="taskContainer">
+
+                        <!-- Tasks -->
+
+                    </div>
+
+                </div>
+
+                <div class="calendar-card">
+
+                    Calendar
+
+                </div>
+
+                <div class="tomorrow-card">
+
+                    Tomorrow
+
+                </div>
+
+                <div class="statistics-card">
+
+                    Statistics
+
+                </div>
+
+                <div class="activity-card">
+
+                    Recent Activity
+
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+    <script src="js/dashboard.js"></script>
+
+</body>
 
 </html>
