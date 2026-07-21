@@ -1,15 +1,216 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TaskFlow | Sign Up</title>
+
+    <link rel="icon" type="image/svg+xml" href="assets/logos/taskflow-icon.svg">
+
+    <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
     <link rel="stylesheet" href="css/variables.css">
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/layout.css">
     <link rel="stylesheet" href="css/components.css">
     <link rel="stylesheet" href="css/pages.css">
     <link rel="stylesheet" href="css/responsive.css">
+
 </head>
+
+<body>
+
+    <div class="login-page">
+
+        <!-- Left Side -->
+
+        <section class="login-left">
+
+            <div class="brand">
+
+                <img src="assets/logos/taskflow-logo.svg"
+                     alt="TaskFlow Logo"
+                     class="logo">
+
+                <p>
+                    Plan your day, manage your work,
+                    and never miss an important task.
+                </p>
+
+                <br>
+
+                <ul class="feature-list">
+
+                    <li>✅ Today's Tasks</li>
+
+                    <li>✅ Tomorrow Planner</li>
+
+                    <li>✅ History & Statistics</li>
+
+                </ul>
+
+            </div>
+
+            <div class="hero">
+
+                <div class="circle circle1"></div>
+
+                <div class="circle circle2"></div>
+
+                <div class="circle circle3"></div>
+
+            </div>
+
+        </section>
+
+        <!-- Right Side -->
+
+        <section class="login-right">
+
+            <div class="login-card">
+
+                <h2>Create Account</h2>
+
+                <p>Create your free TaskFlow account.</p>
+
+                <form id="signupForm" novalidate>
+
+                    <label>Full Name</label>
+
+                    <input
+                        id="fullName"
+                        class="input"
+                        type="text"
+                        placeholder="John Doe">
+
+                    <small id="nameError"></small>
+
+                    <label>Email</label>
+
+                    <input
+                        id="email"
+                        class="input"
+                        type="email"
+                        placeholder="example@email.com">
+
+                    <small id="emailError"></small>
+
+                    <label>Password</label>
+
+                    <div class="password-box">
+
+                        <input
+                            id="password"
+                            class="input"
+                            type="password"
+                            placeholder="Password">
+
+                        <button
+                            type="button"
+                            id="togglePassword">
+
+                            👁
+
+                        </button>
+
+                    </div>
+
+                    <small id="passwordError"></small>
+
+                    <label>Confirm Password</label>
+
+                    <div class="password-box">
+
+                        <input
+                            id="confirmPassword"
+                            class="input"
+                            type="password"
+                            placeholder="Confirm Password">
+
+                        <button
+                            type="button"
+                            id="toggleConfirmPassword">
+
+                            👁
+
+                        </button>
+
+                    </div>
+
+                    <small id="confirmPasswordError"></small>
+
+                    <div class="strength">
+
+                        <div
+                            id="strengthBar"
+                            class="strength-bar">
+
+                        </div>
+
+                    </div>
+
+                    <p id="strengthText">
+
+                        Password strength
+
+                    </p>
+
+                    <label class="terms">
+
+                        <input
+                            id="terms"
+                            type="checkbox">
+
+                        I agree to the
+
+                        <a href="#">Terms</a>
+
+                        &
+
+                        <a href="#">Privacy Policy</a>
+
+                    </label>
+
+                    <small id="termsError"></small>
+
+                    <button
+                        id="signupBtn"
+                        class="btn btn-primary login-btn">
+
+                        Create Account
+
+                    </button>
+
+                </form>
+
+                <div class="signup-link">
+
+                    Already have an account?
+
+                    <a href="login.html">
+
+                        Login
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </div>
+
+    <script src="js/signup.js"></script>
+
+</body>
 
 </html>
