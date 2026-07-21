@@ -510,3 +510,20 @@
     opacity:.8;
 
 }
+
+
+small{
+
+display:block;
+
+margin-top:-10px;
+
+margin-bottom:15px;
+
+font-size:.85rem;
+
+color:#ef4444;
+
+min-height:18px;
+
+}

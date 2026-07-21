@@ -90,24 +90,31 @@
 
             </p>
 
-            <form>
+            <form id="loginForm" novalidate>
 
                 <label>Email</label>
 
                 <input
-                    class="input"
-                    type="email"
-                    placeholder="example@email.com">
+id="email"
+class="input"
+type="email"
+placeholder="example@email.com"
+required>
+
+<small id="emailError"></small>
 
                 <label>Password</label>
 
                 <div class="password-box">
 
                     <input
-                        class="input"
-                        id="password"
-                        type="password"
-                        placeholder="Password">
+id="password"
+class="input"
+type="password"
+placeholder="Password"
+required>
+
+<small id="passwordError"></small>
 
                     <button
                         type="button"
@@ -138,11 +145,12 @@
                 </div>
 
                 <button
-                    class="btn btn-primary login-btn">
+id="loginBtn"
+class="btn btn-primary login-btn">
 
-                    Login
+Login
 
-                </button>
+</button>
 
             </form>
 
