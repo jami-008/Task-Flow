@@ -1,15 +1,171 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/variables.css">
-    <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/layout.css">
-    <link rel="stylesheet" href="css/components.css">
-    <link rel="stylesheet" href="css/pages.css">
-    <link rel="stylesheet" href="css/responsive.css">
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>TaskFlow | Login</title>
+
+    <!-- Google Font -->
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <!-- CSS -->
+
+    <link rel="stylesheet"
+          href="css/variables.css">
+
+    <link rel="stylesheet"
+          href="css/base.css">
+
+    <link rel="stylesheet"
+          href="css/layout.css">
+
+    <link rel="stylesheet"
+          href="css/components.css">
+
+    <link rel="stylesheet"
+          href="css/pages.css">
+
+    <link rel="stylesheet"
+          href="css/responsive.css">
+
 </head>
+
+<body>
+
+<div class="login-page">
+
+    <!-- LEFT PANEL -->
+
+    <section class="login-left">
+
+        <div class="brand">
+
+            <h1>TaskFlow</h1>
+
+            <p>
+                Organize your work.
+                Finish your goals.
+                Stay productive.
+            </p>
+
+        </div>
+
+        <div class="hero">
+
+            <div class="circle circle1"></div>
+
+            <div class="circle circle2"></div>
+
+            <div class="circle circle3"></div>
+
+        </div>
+
+    </section>
+
+    <!-- RIGHT PANEL -->
+
+    <section class="login-right">
+
+        <div class="login-card">
+
+            <h2>Welcome Back 👋</h2>
+
+            <p>
+
+                Login to continue your productivity.
+
+            </p>
+
+            <form>
+
+                <label>Email</label>
+
+                <input
+                    class="input"
+                    type="email"
+                    placeholder="example@email.com">
+
+                <label>Password</label>
+
+                <div class="password-box">
+
+                    <input
+                        class="input"
+                        id="password"
+                        type="password"
+                        placeholder="Password">
+
+                    <button
+                        type="button"
+                        id="togglePassword">
+
+                        👁
+
+                    </button>
+
+                </div>
+
+                <div class="login-options">
+
+                    <label>
+
+                        <input type="checkbox">
+
+                        Remember Me
+
+                    </label>
+
+                    <a href="#">
+
+                        Forgot Password?
+
+                    </a>
+
+                </div>
+
+                <button
+                    class="btn btn-primary login-btn">
+
+                    Login
+
+                </button>
+
+            </form>
+
+            <div class="signup-link">
+
+                Don't have an account?
+
+                <a href="signup.html">
+
+                    Create Account
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</div>
+
+<script src="js/auth.js"></script>
+
+</body>
 
 </html>
