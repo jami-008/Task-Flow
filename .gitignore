@@ -1,0 +1,29 @@
+# Go
+bin/
+*.exe
+*.test
+vendor/
+
+# Environment
+.env
+
+# IDE
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Node
+node_modules/
+
+# Build
+dist/
+build/
+
+# Docker
+*.pid

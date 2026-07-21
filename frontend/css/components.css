@@ -1,0 +1,64 @@
+/* ===========================
+   Buttons
+=========================== */
+
+.btn {
+    padding: 12px 24px;
+    border-radius: 12px;
+    font-weight: 600;
+    transition: .3s;
+}
+
+.btn-primary {
+    background: var(--primary);
+    color: white;
+}
+
+.btn-primary:hover {
+    background: var(--primary-dark);
+}
+
+.btn-danger {
+    background: var(--danger);
+    color: white;
+}
+
+.btn-success {
+    background: var(--success);
+    color: white;
+}
+
+/* ===========================
+   Inputs
+=========================== */
+
+.input {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    margin-top: 8px;
+    margin-bottom: 18px;
+    font-size: 15px;
+}
+
+.input:focus {
+    border-color: var(--primary);
+}
+
+/* ===========================
+   Cards
+=========================== */
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: var(--shadow-sm);
+    transition: .25s;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-md);
+}
