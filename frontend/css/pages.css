@@ -601,8 +601,279 @@ small{
 
 }
 
-/* ==========================================
+
+
+/* ==========================================================
    DASHBOARD
-========================================== */
+========================================================== */
 
 
+/* ===========================================
+   DASHBOARD LAYOUT
+=========================================== */
+
+.dashboard{
+
+    display:grid;
+
+    grid-template-columns:260px 1fr;
+
+    min-height:100vh;
+
+    background:#f8fafc;
+
+}
+
+
+/* ===========================================
+   SIDEBAR
+=========================================== */
+
+.sidebar{
+
+    background:#0f172a;
+
+    color:white;
+
+    display:flex;
+
+    flex-direction:column;
+
+    padding:25px;
+
+    position:sticky;
+
+    top:0;
+
+    height:100vh;
+
+}
+
+.sidebar-logo{
+
+    margin-bottom:40px;
+
+}
+
+.sidebar-logo img{
+
+    width:170px;
+
+}
+
+.sidebar nav{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:10px;
+
+}
+
+.sidebar nav a{
+
+    color:white;
+
+    text-decoration:none;
+
+    padding:14px 16px;
+
+    border-radius:12px;
+
+    transition:.25s;
+
+    font-weight:500;
+
+}
+
+.sidebar nav a:hover{
+
+    background:rgba(255,255,255,.12);
+
+}
+
+.sidebar nav .active{
+
+    background:#2563eb;
+
+}
+
+
+/* ===========================================
+   MAIN CONTENT
+=========================================== */
+
+.main-content{
+
+    padding:30px;
+
+}
+
+
+/* ===========================================
+   HEADER
+=========================================== */
+
+.topbar{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:30px;
+
+}
+
+.search-box{
+
+    width:350px;
+
+    max-width:100%;
+
+    padding:14px 18px;
+
+    border:none;
+
+    border-radius:14px;
+
+    background:white;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+    outline:none;
+
+}
+
+.topbar-right{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+}
+
+.topbar-right button{
+
+    width:46px;
+
+    height:46px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:white;
+
+    cursor:pointer;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+}
+
+.profile{
+
+    width:46px;
+
+    height:46px;
+
+    border-radius:50%;
+
+    background:#2563eb;
+
+    color:white;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-weight:700;
+
+}
+
+
+/* ===========================================
+   WELCOME CARD
+=========================================== */
+
+.welcome-card{
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:22px;
+
+    margin-bottom:30px;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
+
+}
+
+.welcome-card h1{
+
+    margin-bottom:10px;
+
+}
+
+
+/* ===========================================
+   DASHBOARD GRID
+=========================================== */
+
+.dashboard-grid{
+
+    display:grid;
+
+    grid-template-columns:2fr 1fr;
+
+    gap:25px;
+
+}
+
+
+/* ===========================================
+   DASHBOARD CARDS
+=========================================== */
+
+.today-card,
+.calendar-card,
+.tomorrow-card,
+.statistics-card,
+.activity-card{
+
+    background:white;
+
+    border-radius:22px;
+
+    padding:25px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+    min-height:220px;
+
+}
+
+.card-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:20px;
+
+}
+
+.activity-card{
+
+    grid-column:1/3;
+
+}
