@@ -136,3 +136,347 @@
     right:180px;
 
 }
+
+/*=========2.1=============*/
+
+/* ==========================================================
+   LOGIN CARD
+========================================================== */
+
+.login-card{
+
+    width:100%;
+    max-width:460px;
+
+    background:#ffffff;
+
+    padding:45px;
+
+    border-radius:24px;
+
+    box-shadow:0 20px 60px rgba(15,23,42,.12);
+
+}
+
+.login-card h2{
+
+    font-size:2rem;
+
+    margin-bottom:10px;
+
+    color:#0f172a;
+
+}
+
+.login-card>p{
+
+    color:#64748b;
+
+    margin-bottom:35px;
+
+}
+
+/* ==========================================================
+   FORM
+========================================================== */
+
+.login-card label{
+
+    display:block;
+
+    margin-bottom:8px;
+
+    font-weight:600;
+
+    color:#334155;
+
+}
+
+/* ==========================================================
+   PASSWORD
+========================================================== */
+
+.password-box{
+
+    position:relative;
+
+}
+
+.password-box input{
+
+    padding-right:55px;
+
+}
+
+.password-box button{
+
+    position:absolute;
+
+    top:50%;
+    right:15px;
+
+    transform:translateY(-50%);
+
+    background:none;
+
+    border:none;
+
+    cursor:pointer;
+
+    font-size:18px;
+
+    color:#64748b;
+
+}
+
+/* ==========================================================
+   LOGIN OPTIONS
+========================================================== */
+
+.login-options{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin:20px 0 30px;
+
+    font-size:.95rem;
+
+}
+
+.login-options label{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    margin:0;
+
+    font-weight:500;
+
+}
+
+.login-options input{
+
+    width:16px;
+    height:16px;
+
+}
+
+.login-options a{
+
+    color:var(--primary);
+
+    font-weight:600;
+
+}
+
+.login-options a:hover{
+
+    text-decoration:underline;
+
+}
+
+/* ==========================================================
+   LOGIN BUTTON
+========================================================== */
+
+.login-btn{
+
+    width:100%;
+
+    padding:16px;
+
+    font-size:16px;
+
+    border-radius:14px;
+
+}
+
+/* ==========================================================
+   SIGNUP
+========================================================== */
+
+.signup-link{
+
+    margin-top:30px;
+
+    text-align:center;
+
+    color:#64748b;
+
+}
+
+.signup-link a{
+
+    color:var(--primary);
+
+    font-weight:700;
+
+}
+
+.signup-link a:hover{
+
+    text-decoration:underline;
+
+}
+
+/*==============2.2================*/
+
+
+/* ==========================================================
+   LOGIN ANIMATIONS
+========================================================== */
+
+/* Floating circles */
+
+.circle1 {
+    animation: float1 8s ease-in-out infinite;
+}
+
+.circle2 {
+    animation: float2 10s ease-in-out infinite;
+}
+
+.circle3 {
+    animation: float3 12s ease-in-out infinite;
+}
+
+@keyframes float1 {
+    0%,100%{
+        transform:translateY(0);
+    }
+    50%{
+        transform:translateY(-30px);
+    }
+}
+
+@keyframes float2 {
+    0%,100%{
+        transform:translateY(0) translateX(0);
+    }
+    50%{
+        transform:translateY(25px) translateX(-15px);
+    }
+}
+
+@keyframes float3 {
+    0%,100%{
+        transform:translateY(0);
+    }
+    50%{
+        transform:translateY(-20px);
+    }
+}
+
+/* ==========================================================
+   LOGIN CARD ANIMATION
+========================================================== */
+
+.login-card{
+
+    animation:fadeUp .8s ease;
+    transition:.3s;
+
+}
+
+.login-card:hover{
+
+    transform:translateY(-5px);
+
+}
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(40px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/* ==========================================================
+   BUTTON EFFECT
+========================================================== */
+
+.login-btn{
+
+    transition:.3s;
+
+}
+
+.login-btn:hover{
+
+    transform:translateY(-2px);
+
+    box-shadow:0 12px 25px rgba(37,99,235,.30);
+
+}
+
+/* ==========================================================
+   INPUT EFFECT
+========================================================== */
+
+.input{
+
+    transition:.25s;
+
+}
+
+.input:hover{
+
+    border-color:#94a3b8;
+
+}
+
+/* ==========================================================
+   BRAND EFFECT
+========================================================== */
+
+.brand h1{
+
+    letter-spacing:1px;
+
+}
+
+.brand{
+
+    animation:fadeBrand 1s ease;
+
+}
+
+@keyframes fadeBrand{
+
+    from{
+
+        opacity:0;
+
+        transform:translateX(-40px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateX(0);
+
+    }
+
+}
