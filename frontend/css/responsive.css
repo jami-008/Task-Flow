@@ -27,3 +27,125 @@ width:92%;
 }
 
 }
+
+/*=============2============*/
+
+/* ===========================================
+   Laptop
+=========================================== */
+
+@media (max-width:1200px){
+
+    .login-left{
+
+        padding:40px;
+
+    }
+
+    .login-card{
+
+        max-width:420px;
+
+    }
+
+}
+
+/* ===========================================
+   Tablet
+=========================================== */
+
+@media (max-width:900px){
+
+    .login-page{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .login-left{
+
+        min-height:300px;
+
+        justify-content:center;
+
+        text-align:center;
+
+    }
+
+    .brand{
+
+        margin:auto;
+
+    }
+
+    .hero{
+
+        display:none;
+
+    }
+
+    .login-right{
+
+        padding:30px;
+
+    }
+
+}
+
+/* ===========================================
+   Mobile
+=========================================== */
+
+@media (max-width:600px){
+
+    .login-left{
+
+        padding:30px 20px;
+
+        min-height:220px;
+
+    }
+
+    .brand h1{
+
+        font-size:2.3rem;
+
+    }
+
+    .brand p{
+
+        font-size:1rem;
+
+    }
+
+    .login-right{
+
+        padding:20px;
+
+    }
+
+    .login-card{
+
+        padding:30px 25px;
+
+        border-radius:18px;
+
+    }
+
+    .login-card h2{
+
+        font-size:1.7rem;
+
+    }
+
+    .login-options{
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+        gap:12px;
+
+    }
+
+}
