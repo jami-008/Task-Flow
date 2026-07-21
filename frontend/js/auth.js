@@ -1,3 +1,21 @@
+function showToast(message){
+
+    const toast=document.getElementById("toast");
+
+    const text=document.getElementById("toastMessage");
+
+    text.textContent=message;
+
+    toast.classList.add("show");
+
+    setTimeout(()=>{
+
+        toast.classList.remove("show");
+
+    },3000);
+
+}
+
 const password = document.getElementById("password");
 const toggle = document.getElementById("togglePassword");
 
@@ -75,16 +93,27 @@ if(!valid) return;
 
 loginBtn.disabled=true;
 
-loginBtn.textContent="Logging in...";
+loginBtn.innerHTML='<span class="spinner"></span>';
 
 setTimeout(()=>{
 
 loginBtn.disabled=false;
 
-loginBtn.textContent="Login";
+loginBtn.innerHTML="Login";
 
-alert("Frontend validation passed.");
+showToast("Login successful (Frontend Demo)");
 
 },1500);
+
+});
+
+
+document.addEventListener("keydown",(e)=>{
+
+    if(e.key==="Enter"){
+
+        form.requestSubmit();
+
+    }
 
 });
